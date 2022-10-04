@@ -93,9 +93,25 @@ public class Matriser {
 // d)
 	public static boolean erLik(int[][] a, int[][] b) {
 
-		// TODO
-		throw new UnsupportedOperationException("erLik ikke implementert");
+		public static void main(String[] args) {
+
+		int mat1[][] = { {7, 9, 2}, {3, 8, 6}, {1, 4, 2} };
+		int mat2[][] = { {7, 9, 2}, {3, 8, 6}, {1, 4, 2} };
+		boolean lik = true;
+		int n = 3;
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < n; j++)
+				if (mat1[i][j] != mat2[i][j])
+					lik = false;
+		if (lik == true) {
+			lik = true;
+			System.out.print(lik);
+		}
+		else {
+			System.out.print(lik);
+		} 
 	}
+
 	
 	// e)
 	public static int[][] speile(int[][] matrise) {
